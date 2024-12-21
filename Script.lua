@@ -187,7 +187,7 @@ local AutoFishToggle = Tabs.AutoFarm:AddToggle("Toggle", {
     Description = "Auto Fish, Don't Need To Stay Here!",
     Default = false,
     Callback = function(Value)
-        Humanoid.WalkSpeed = Value
+        AutoFish = Value
     end
 })
 
@@ -199,7 +199,7 @@ local ShakeDelaySlider = Tabs.AutoFarm:AddSlider("Slider", {
     Max = 1,
     Rounding = 1,
     Callback = function(Value)
-        Humanoid.WalkSpeed = Value
+        autoShakeDelay = Value
     end
 })
 
